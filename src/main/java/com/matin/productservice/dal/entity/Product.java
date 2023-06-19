@@ -4,6 +4,7 @@ import com.matin.productservice.dal.entity.referencedata.Provider;
 import com.matin.productservice.dal.entity.referencedata.Type;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.util.List;
 
@@ -31,6 +32,9 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "type_id", nullable = false)
     private Type type;
+
+    @Column(name = "is_visible", columnDefinition = "boolean default true", nullable = false)
+    private Boolean isVisible;
 
     @OneToMany(mappedBy = "product")
     private List<Comment> comments;
