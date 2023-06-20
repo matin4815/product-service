@@ -10,7 +10,9 @@ import java.util.List;
 @Mapper(componentModel = "spring_toDto")
 public interface ProviderMapperToDto {
 
+    @Mapping(target = "id")
     ReferenceTransferDataDto toDto(Provider provider);
 
+    @Mapping(target = "id", qualifiedByName = "toDto")
     List<ReferenceTransferDataDto> listProviderToDto(List<Provider> providers);
 }

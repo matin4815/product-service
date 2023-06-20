@@ -9,5 +9,5 @@ public interface ProductService {
 
     Boolean createProduct(ProductDto productDto) throws Exception;
 
-    List<Product> getAllProducts();
+    List<ProductDto> getAllProducts();
 }

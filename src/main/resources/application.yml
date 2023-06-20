@@ -1,15 +1,12 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:productdb
-    driverClassName: org.h2.Driver
-    username: h2db
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
     password: Aa123456
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
 
 server:
   port: 8181
