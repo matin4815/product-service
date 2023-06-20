@@ -4,6 +4,8 @@ import com.matin.productservice.dal.entity.Comment;
 import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dal.repository.CommentRepository;
 import com.matin.productservice.dto.comment.CommentDto;
+import com.matin.productservice.enums.CommentState;
+import com.matin.productservice.enums.VoteState;
 import com.matin.productservice.mapper.CommentMapper;
 import com.matin.productservice.service.product.ProductService;
 import com.matin.productservice.utils.pagination.PageableFactory;
@@ -22,6 +24,8 @@ public class CommentServiceImpl implements CommentService{
     private final ProductService productService;
 
     private final CommentMapper commentMapper = Mappers.getMapper(CommentMapper.class);
+
+    private static final CommentState validCommentStatus = CommentState.ACCEPTED;
 
     public CommentServiceImpl(CommentRepository commentRepository, ProductService productService) {
         this.commentRepository = commentRepository;
@@ -53,7 +57,7 @@ public class CommentServiceImpl implements CommentService{
 
         Product product = getProduct(productId);
         Pageable pageable = PageableFactory.createPageable(page);
-        return commentMapper.listCommentToCommentDto(commentRepository.findCommentByProduct(product, pageable));
+        return commentMapper.listCommentToCommentDto(commentRepository.findCommentByProductAndState(product, validCommentStatus, pageable));
 
     }
 

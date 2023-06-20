@@ -2639,3 +2639,327 @@ java.lang.RuntimeException: Item was not found
                 Completed initialization in 1 ms
 [2023-06-21 01:09:48.774] WARN  DESKTOP-9D8RCUQ [nio-8181-exec-3] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
                 Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'page' for method parameter type Integer is not present]
+[2023-06-21 02:26:28.130] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:26:28.143] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 02:26:28.150] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 02:26:43.011] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 02:26:43.040] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 14436 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-21 02:26:43.041] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 02:26:43.691] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 02:26:43.767] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+[2023-06-21 02:26:44.124] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 02:26:44.131] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:26:44.132] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 02:26:44.132] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 02:26:44.207] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 02:26:44.207] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1130 ms
+[2023-06-21 02:26:44.309] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 02:26:44.353] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 02:26:44.355] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 02:26:44.458] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:26:44.531] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 02:26:44.541] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 02:26:44.674] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26874f2c
+[2023-06-21 02:26:44.676] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 02:26:44.709] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@76e6c070
+[2023-06-21 02:26:44.888] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:26:45.434] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 02:26:45.538] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:26:45.868] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 02:26:46.103] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:26:46.119] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 02:26:46.127] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 3.433 seconds (process running for 4.563)
+[2023-06-21 02:30:01.379] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:30:01.380] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 02:30:01.384] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 02:30:10.835] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 02:30:10.866] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 13488 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-21 02:30:10.867] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 02:30:11.524] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 02:30:11.617] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+[2023-06-21 02:30:12.005] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 02:30:12.011] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:30:12.012] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 02:30:12.012] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 02:30:12.103] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 02:30:12.103] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1199 ms
+[2023-06-21 02:30:12.252] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 02:30:12.296] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 02:30:12.298] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 02:30:12.417] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:30:12.601] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 02:30:12.616] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 02:30:12.811] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26874f2c
+[2023-06-21 02:30:12.814] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 02:30:12.856] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@76e6c070
+[2023-06-21 02:30:13.045] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:30:13.583] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 02:30:13.677] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:30:13.995] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 02:30:14.234] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:30:14.250] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 02:30:14.256] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 3.756 seconds (process running for 4.803)
+[2023-06-21 02:30:19.482] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:30:19.484] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 02:30:19.487] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 02:30:25.620] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 02:30:25.650] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 19260 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-21 02:30:25.652] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 02:30:26.182] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 02:30:26.250] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+[2023-06-21 02:30:26.608] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 02:30:26.614] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:30:26.614] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 02:30:26.614] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 02:30:26.680] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 02:30:26.680] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 994 ms
+[2023-06-21 02:30:26.777] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 02:30:26.808] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 02:30:26.810] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 02:30:26.907] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:30:26.976] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 02:30:26.985] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 02:30:27.220] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bc20984
+[2023-06-21 02:30:27.221] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 02:30:27.250] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7404ddca
+[2023-06-21 02:30:27.414] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 02:30:27.957] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 02:30:28.065] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 02:30:28.376] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 02:30:28.612] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 02:30:28.628] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 02:30:28.636] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 3.324 seconds (process running for 4.217)
+[2023-06-21 02:30:59.336] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-21 02:30:59.337] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-21 02:30:59.338] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 1 ms
+[2023-06-21 03:00:03.962] WARN  DESKTOP-9D8RCUQ [nio-8181-exec-9] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver :
+                Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[2023-06-21 03:00:12.155] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 03:00:12.161] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 03:00:12.165] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 03:00:22.480] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 03:00:22.513] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 4552 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-21 03:00:22.515] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 03:00:23.355] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 03:00:23.436] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+[2023-06-21 03:00:23.792] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 03:00:23.798] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 03:00:23.798] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 03:00:23.799] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 03:00:23.875] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 03:00:23.875] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1321 ms
+[2023-06-21 03:00:23.983] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 03:00:24.027] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 03:00:24.029] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 03:00:24.134] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 03:00:24.207] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 03:00:24.218] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 03:00:24.351] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1002d192
+[2023-06-21 03:00:24.353] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 03:00:24.389] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@51eb0e84
+[2023-06-21 03:00:24.573] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 03:00:25.140] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 03:00:25.255] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 03:00:25.550] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-21 03:00:25.771] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 03:00:26.011] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 03:00:26.028] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 03:00:26.035] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 3.906 seconds (process running for 5.089)
+[2023-06-21 03:00:34.173] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-21 03:00:34.174] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-21 03:00:34.174] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 0 ms
+[2023-06-21 03:05:46.656] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 03:05:46.658] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 03:05:46.661] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 03:05:53.036] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 03:05:53.064] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 12204 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-21 03:05:53.065] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 03:05:53.590] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 03:05:53.680] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+[2023-06-21 03:05:54.019] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 03:05:54.025] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 03:05:54.026] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 03:05:54.026] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 03:05:54.102] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 03:05:54.102] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1002 ms
+[2023-06-21 03:05:54.210] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 03:05:54.244] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 03:05:54.246] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 03:05:54.338] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 03:05:54.407] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 03:05:54.418] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 03:05:54.550] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69a373fd
+[2023-06-21 03:05:54.551] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 03:05:54.580] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@18c7f6b5
+[2023-06-21 03:05:54.750] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 03:05:55.269] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 03:05:55.382] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 03:05:55.676] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-21 03:05:55.883] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 03:05:56.137] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 03:05:56.152] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 03:05:56.160] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 3.439 seconds (process running for 4.579)
+[2023-06-21 03:06:06.225] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-21 03:06:06.225] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-21 03:06:06.226] INFO  DESKTOP-9D8RCUQ [nio-8181-exec-2] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 1 ms

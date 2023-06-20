@@ -14,7 +14,7 @@ public class ProductDto extends BaseProductDto{
 
     private List<CommentDto> comments;
 
-    private int votesCount;
+    private Integer votesCount;
 
-    private double averageVote;
+    private Double averageVote;
 }

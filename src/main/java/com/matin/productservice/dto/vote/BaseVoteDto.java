@@ -1,6 +1,8 @@
-package com.matin.productservice.dto.product.vote;
+package com.matin.productservice.dto.vote;
 
 import com.matin.productservice.dal.entity.Product;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -10,13 +12,13 @@ import java.util.Date;
 @Data
 public class BaseVoteDto {
 
-
     private Long id;
 
-    @NotBlank
-    private String content;
-
     @NotNull
+    @Min(1)
+    @Max(5)
+    private Integer value;
+
     private Product product;
 
     @NotBlank

@@ -5,8 +5,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import lombok.Data;
-import lombok.Getter;
-import org.hibernate.annotations.ColumnDefault;
 
 import java.util.Date;
 
@@ -36,7 +34,14 @@ public class Vote {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "state")
-    @ColumnDefault("'UNACCEPTED'")
     private VoteState state;
+
+
+    @PrePersist
+    private void setDefaultState() {
+        if (state == null) {
+            state = VoteState.UNACCEPTED;
+        }
+    }
 
 }

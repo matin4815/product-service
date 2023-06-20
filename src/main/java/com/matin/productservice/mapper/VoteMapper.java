@@ -1,7 +1,7 @@
 package com.matin.productservice.mapper;
 
 import com.matin.productservice.dal.entity.Vote;
-import com.matin.productservice.dto.product.vote.VoteDto;
+import com.matin.productservice.dto.vote.VoteDto;
 import org.mapstruct.Mapper;
 
 import java.util.List;

@@ -40,10 +40,10 @@ public class Product {
     private List<Comment> comments;
 
     @Transient
-    private int votesCount;
+    private Integer votesCount;
 
     @Transient
-    private double averageVote;
+    private Double averageVote;
 
 
 //    public void calculateVotesCountAndAverage(List<Vote> votes) {
