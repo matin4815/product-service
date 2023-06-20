@@ -5,6 +5,7 @@ import com.matin.productservice.dal.repository.ProductRepository;
 import com.matin.productservice.dto.product.ProductDto;
 import com.matin.productservice.mapper.ToProductDtoMapper;
 import com.matin.productservice.mapper.ToProductMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Slf4j
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
@@ -43,6 +45,7 @@ public class ProductServiceImpl implements ProductService {
         if(products.size() != 0) {
             return products.stream().map(toProductDtoMapper::toProductDto).toList();
         } else {
+            log.warn("THERE WERE NO FILES TO BE RENDERED.");
             throw new RuntimeException("No products were found!");
         }
     }
@@ -63,6 +66,7 @@ public class ProductServiceImpl implements ProductService {
         if(product.isPresent()) {
             return toProductDtoMapper.toProductDto(product.get());
         } else
+            log.warn("REQUESTED OBJECT DID NOT EXIST.");
             throw new RuntimeException("Item was not found");
     }
 
