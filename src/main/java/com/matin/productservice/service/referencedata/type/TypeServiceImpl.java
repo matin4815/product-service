@@ -39,6 +39,10 @@ public class TypeServiceImpl implements TypeService{
     @Override
     public List<ReferenceTransferDataDto> getAllTypes() {
         List<Type> types = typeRepository.findAll();
+        return checkTypeListPresent(types);
+    }
+
+    private List<ReferenceTransferDataDto> checkTypeListPresent(List<Type> types) {
         if(types.size() != 0) {
             return typeMapperToDto.listTypeToDto(types);
         }else {
@@ -49,6 +53,10 @@ public class TypeServiceImpl implements TypeService{
     @Override
     public ReferenceTransferDataDto getTypeById(Long id) {
         Optional<Type> type = typeRepository.findById(id);
+        return checkTypePresent(type);
+    }
+
+    private ReferenceTransferDataDto checkTypePresent(Optional<Type> type) {
         if(type.isPresent()) {
             return typeMapperToDto.toDto(type.get());
         } else {
@@ -59,10 +67,6 @@ public class TypeServiceImpl implements TypeService{
     @Override
     public ReferenceTransferDataDto getTypeByName(String name) {
         Optional<Type> type = typeRepository.findByName(name);
-        if(type.isPresent()) {
-            return typeMapperToDto.toDto(type.get());
-        } else {
-            throw new RuntimeException("The item was not found");
-        }
+        return checkTypePresent(type);
     }
 }

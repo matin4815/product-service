@@ -11,7 +11,6 @@ import java.util.List;
 @Mapper(componentModel = "spring_toDto")
 public interface TypeMapperToDto {
 
-    @Mapping(target = "id")
     ReferenceTransferDataDto toDto(Type type);
 
     @Mapping(target = "id", qualifiedByName = "toDto")

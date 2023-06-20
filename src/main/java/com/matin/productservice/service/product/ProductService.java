@@ -10,4 +10,8 @@ public interface ProductService {
     Boolean createProduct(ProductDto productDto) throws Exception;
 
     List<ProductDto> getAllProducts();
+
+    ProductDto getProductByName(String name);
+
+    ProductDto getProductById(Long id);
 }

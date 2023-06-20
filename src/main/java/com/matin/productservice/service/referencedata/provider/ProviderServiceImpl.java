@@ -38,17 +38,25 @@ public class ProviderServiceImpl implements ProviderService {
     @Override
     public List<ReferenceTransferDataDto> getAllProviders() {
         List<Provider> providers = providerRepository.findAll();
+        return checkProviderListPresent(providers);
+
+    }
+
+    private List<ReferenceTransferDataDto> checkProviderListPresent(List<Provider> providers) {
         if(providers.size() != 0) {
             return providerMapperToDto.listProviderToDto(providers);
         } else {
             throw new RuntimeException("There are no items present");
         }
-
     }
 
     @Override
     public ReferenceTransferDataDto getProviderByName(String name) {
         Optional<Provider> provider = providerRepository.findByName(name);
+        return checkProviderPresent(provider);
+    }
+
+    private ReferenceTransferDataDto checkProviderPresent(Optional<Provider> provider) {
         if(provider.isPresent())
             return providerMapperToDto.toDto(provider.get());
         else {
@@ -59,10 +67,6 @@ public class ProviderServiceImpl implements ProviderService {
     @Override
     public ReferenceTransferDataDto getProviderById(Long id) {
         Optional<Provider> provider = providerRepository.findById(id);
-        if(provider.isPresent())
-            return providerMapperToDto.toDto(provider.get());
-        else {
-            throw new RuntimeException("The item was not found");
-        }
+        return checkProviderPresent(provider);
     }
 }

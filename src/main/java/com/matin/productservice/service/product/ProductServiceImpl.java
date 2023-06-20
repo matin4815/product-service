@@ -9,6 +9,7 @@ import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -44,6 +45,25 @@ public class ProductServiceImpl implements ProductService {
         } else {
             throw new RuntimeException("No products were found!");
         }
+    }
+
+    @Override
+    public ProductDto getProductByName(String name) {
+        Optional<Product> product = productRepository.findByName(name);
+        return checkProductPresent(product);
+    }
+
+    @Override
+    public ProductDto getProductById(Long id) {
+        Optional<Product> product = productRepository.findById(id);
+        return checkProductPresent(product);
+    }
+
+    private ProductDto checkProductPresent(Optional<Product> product) {
+        if(product.isPresent()) {
+            return toProductDtoMapper.toProductDto(product.get());
+        } else
+            throw new RuntimeException("Item was not found");
     }
 
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 public class ProductDto extends BaseProductDto{
 
-    private Boolean isVisible;
+    private Boolean isVisible = true;
 
     private List<CommentDto> comments;
 
