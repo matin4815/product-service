@@ -1,4 +1,4 @@
-package com.matin.productservice.dto.vote;
+package com.matin.productservice.dto.product.vote;
 
 import com.matin.productservice.dal.entity.Product;
 import jakarta.validation.constraints.NotBlank;

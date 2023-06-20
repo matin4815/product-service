@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import lombok.Data;
+import lombok.Getter;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.util.Date;
@@ -21,7 +22,7 @@ public class Vote {
     @Column(name = "vote_value",nullable = false)
     @Min(1)
     @Max(5)
-    private int value;
+    private Integer value;
 
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)

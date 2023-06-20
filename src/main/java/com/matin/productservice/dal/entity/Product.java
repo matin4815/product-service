@@ -36,7 +36,7 @@ public class Product {
     @Column(name = "is_visible", columnDefinition = "boolean default true", nullable = false)
     private Boolean isVisible;
 
-    @OneToMany(mappedBy = "product")
+    @Transient
     private List<Comment> comments;
 
     @Transient
@@ -46,16 +46,16 @@ public class Product {
     private double averageVote;
 
 
-    public void calculateVotesCountAndAverage(List<Vote> votes) {
-        this.votesCount = votes.size();
-        if (votesCount > 0) {
-            double sum = votes.stream()
-                    .mapToInt(Vote::getValue)
-                    .sum();
-            this.averageVote = (double) sum / votesCount;
-        } else {
-            this.averageVote = 0;
-        }
-    }
+//    public void calculateVotesCountAndAverage(List<Vote> votes) {
+//        this.votesCount = votes.size();
+//        if (votesCount > 0) {
+//            double sum = votes.stream()
+//
+//                    .sum();
+//            this.averageVote = (double) sum / votesCount;
+//        } else {
+//            this.averageVote = 0;
+//        }
+//    }
 
 }

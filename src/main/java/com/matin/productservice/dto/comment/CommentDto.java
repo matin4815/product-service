@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class CommentDto extends BaseCommentDto{
 
-    private String state;
+    private CommentState state;
 
 }
