@@ -4,6 +4,7 @@ import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dto.product.ProductDto;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductService {
 
@@ -13,5 +14,5 @@ public interface ProductService {
 
     ProductDto getProductByName(String name);
 
-    ProductDto getProductById(Long id);
+    Optional<Product> getProductById(Long id);
 }

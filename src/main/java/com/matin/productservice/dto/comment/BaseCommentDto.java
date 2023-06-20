@@ -15,7 +15,6 @@ public class BaseCommentDto {
     @NotBlank
     private String content;
 
-    @NotNull
     private Product product;
 
     @NotBlank

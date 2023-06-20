@@ -31,7 +31,12 @@ public class Comment {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "state")
-    @ColumnDefault("'UNACCEPTED'")
     private CommentState state;
 
+    @PrePersist
+    private void setDefaultState() {
+        if (state == null) {
+            state = CommentState.UNACCEPTED;
+        }
+    }
 }

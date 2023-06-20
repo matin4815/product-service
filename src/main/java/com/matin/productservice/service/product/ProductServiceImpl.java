@@ -57,9 +57,14 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductDto getProductById(Long id) {
+    public Optional<Product> getProductById(Long id) {
         Optional<Product> product = productRepository.findById(id);
-        return checkProductPresent(product);
+        if(product.isPresent()) {
+            return product;
+        }else {
+            log.warn("REQUESTED OBJECT DID NOT EXIST.");
+            throw new RuntimeException("Item was not found");
+        }
     }
 
     private ProductDto checkProductPresent(Optional<Product> product) {
