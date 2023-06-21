@@ -14,7 +14,6 @@ import java.util.List;
 public class ReferenceDataController {
 
     private final ProviderService providerService;
-
     private final TypeService typeService;
 
     public ReferenceDataController(ProviderService providerService, TypeService typeService) {
@@ -22,9 +21,9 @@ public class ReferenceDataController {
         this.typeService = typeService;
     }
 
-    //provider
+    // Provider Endpoints
 
-    @PostMapping("/provider")
+    @PostMapping("/providers")
     public void createProvider(@RequestBody @Valid ReferenceTransferDataDto referenceTransferDataDto) throws Exception {
         providerService.createProvider(referenceTransferDataDto);
     }
@@ -34,19 +33,19 @@ public class ReferenceDataController {
         return providerService.getAllProviders();
     }
 
-    @GetMapping("/provider")
-    public ReferenceTransferDataDto getProviderById(@RequestParam Long id) {
+    @GetMapping("/providers/{id}")
+    public ReferenceTransferDataDto getProviderById(@PathVariable Long id) {
         return providerService.getProviderById(id);
     }
 
-    @GetMapping("/provider/{name}")
+    @GetMapping("/providers/name/{name}")
     public ReferenceTransferDataDto getProviderByName(@PathVariable String name) {
         return providerService.getProviderByName(name);
     }
 
-    //type
+    // Type Endpoints
 
-    @PostMapping("/type")
+    @PostMapping("/types")
     public void createType(@RequestBody @Valid ReferenceTransferDataDto referenceTransferDataDto) throws Exception {
         typeService.createType(referenceTransferDataDto);
     }
@@ -56,14 +55,13 @@ public class ReferenceDataController {
         return typeService.getAllTypes();
     }
 
-    @GetMapping("/type")
-    public ReferenceTransferDataDto getTypeById(@RequestParam Long id) {
+    @GetMapping("/types/{id}")
+    public ReferenceTransferDataDto getTypeById(@PathVariable Long id) {
         return typeService.getTypeById(id);
     }
 
-    @GetMapping("/type/{name}")
+    @GetMapping("/types/name/{name}")
     public ReferenceTransferDataDto getTypeByName(@PathVariable String name) {
         return typeService.getTypeByName(name);
     }
-
 }

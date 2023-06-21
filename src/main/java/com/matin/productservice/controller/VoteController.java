@@ -7,7 +7,7 @@ import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/vote")
+@RequestMapping("/votes")
 @CrossOrigin("*")
 public class VoteController {
 
@@ -18,7 +18,7 @@ public class VoteController {
     }
 
     @PostMapping("/products/{productId}")
-    public Boolean voteOnProduct(@PathVariable Long productId, @RequestBody @Valid VoteDto voteDto) {
+    public Boolean voteOnProduct(@PathVariable Long productId, @Valid @RequestBody VoteDto voteDto) {
         return voteService.voteOnProduct(productId, voteDto);
     }
 

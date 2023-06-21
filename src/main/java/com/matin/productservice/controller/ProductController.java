@@ -9,6 +9,7 @@ import jakarta.validation.constraints.NotBlank;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
@@ -22,7 +23,7 @@ public class ProductController {
     }
 
     @PostMapping("/")
-    public Boolean createProduct(@RequestBody @Valid ProductDto productDto) throws Exception {
+    public Boolean createProduct(@Valid @RequestBody ProductDto productDto) throws Exception {
         return productService.createProduct(productDto);
     }
 
@@ -32,34 +33,33 @@ public class ProductController {
     }
 
     @GetMapping("/page")
-    public List<ProductDto> getProductsPaginated(@RequestParam Integer page) {
+    public List<ProductDto> getProductsPaginated(@RequestParam(defaultValue = "0") Integer page) {
         return productService.getProductsPaginated(page);
     }
 
-    @GetMapping("/{name}")
-    public ProductDto getProductByName(@PathVariable @NotBlank String name) {
-        return productService.getProductByName(name);
+    @GetMapping("/name/{productName}")
+    public ProductDto getProductByName(@PathVariable("productName") @NotBlank String productName) {
+        return productService.getProductByName(productName);
     }
 
     @GetMapping("/product")
     public Product getProductById(@RequestParam Long id) {
-        return productService.getProductById(id).get();
+        Optional<Product> productOptional = productService.getProductById(id);
+        return productOptional.orElse(null);
     }
 
     @PostMapping("/display")
-    public Boolean changeProductDisplaySetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    public Boolean changeProductDisplaySetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductDisplaySetting(productDisplayDto);
     }
 
     @PostMapping("/comment/option")
-    public Boolean changeProductCommentSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    public Boolean changeProductCommentSetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductCommentSetting(productDisplayDto);
     }
 
     @PostMapping("/vote/option")
-    public Boolean changeProductVoteSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    public Boolean changeProductVoteSetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductVoteSetting(productDisplayDto);
     }
-
-
 }

@@ -19,14 +19,12 @@ public class CommentController {
     }
 
     @PostMapping("/products/{productId}")
-    public Boolean addCommentToProduct(@PathVariable Long productId, @RequestBody @Valid CommentDto commentDto) {
+    public Boolean addCommentToProduct(@PathVariable Long productId, @Valid @RequestBody CommentDto commentDto) {
         return commentService.addCommentToProduct(productId, commentDto);
     }
 
     @GetMapping("/products/{productId}")
-    public List<CommentDto> getProductComments(@PathVariable Long productId, @RequestParam Integer page) {
+    public List<CommentDto> getProductComments(@PathVariable Long productId, @RequestParam(defaultValue = "0") Integer page) {
         return commentService.getProductComments(productId, page);
     }
-
-
 }
