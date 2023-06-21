@@ -4,11 +4,13 @@ import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dto.product.ProductDisplayDto;
 import com.matin.productservice.dto.product.ProductDto;
 import com.matin.productservice.service.product.ProductService;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
@@ -22,44 +24,59 @@ public class ProductController {
     }
 
     @PostMapping("/")
-    public Boolean createProduct(@RequestBody @Valid ProductDto productDto) throws Exception {
+    @Operation(summary = "Creates a product"
+            , description = "Creates a valid product")
+    public Boolean createProduct(@Valid @RequestBody ProductDto productDto) throws Exception {
         return productService.createProduct(productDto);
     }
 
     @GetMapping("/")
+    @Operation(summary = "Returns all product"
+            , description = "Returns all products, without considering the visibility of the product")
     public List<ProductDto> getAllProducts() {
         return productService.getAllProducts();
     }
 
     @GetMapping("/page")
-    public List<ProductDto> getProductsPaginated(@RequestParam Integer page) {
+    @Operation(summary = "Returns a page of visible products"
+            , description = "Returns a page of visible products, for these products visibilty should be set to true")
+    public List<ProductDto> getProductsPaginated(@RequestParam(defaultValue = "0") Integer page) {
         return productService.getProductsPaginated(page);
     }
 
-    @GetMapping("/{name}")
-    public ProductDto getProductByName(@PathVariable @NotBlank String name) {
-        return productService.getProductByName(name);
+    @GetMapping("/name/{productName}")
+    @Operation(summary = "Find a product by name"
+            , description = "Find a product by name")
+    public ProductDto getProductByName(@PathVariable("productName") @NotBlank String productName) {
+        return productService.getProductByName(productName);
     }
 
     @GetMapping("/product")
+    @Operation(summary = "Find a product by Id"
+            , description = "Find a product by Id")
     public Product getProductById(@RequestParam Long id) {
-        return productService.getProductById(id).get();
+        Optional<Product> productOptional = productService.getProductById(id);
+        return productOptional.orElse(null);
     }
 
     @PostMapping("/display")
-    public Boolean changeProductDisplaySetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    @Operation(summary = "Manipulates a products display setting"
+            , description = "Manipulates a products display setting, by changing the visibility field")
+    public Boolean changeProductDisplaySetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductDisplaySetting(productDisplayDto);
     }
 
     @PostMapping("/comment/option")
-    public Boolean changeProductCommentSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    @Operation(summary = "Manipulates a products comment setting"
+            , description = "Manipulates a products comment setting, by changing the can comment field")
+    public Boolean changeProductCommentSetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductCommentSetting(productDisplayDto);
     }
 
     @PostMapping("/vote/option")
-    public Boolean changeProductVoteSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+    @Operation(summary = "Manipulates a products vote setting"
+            , description = "Manipulates a products vote setting, by changing the vote field")
+    public Boolean changeProductVoteSetting(@Valid @RequestBody ProductDisplayDto productDisplayDto) {
         return productService.changeProductVoteSetting(productDisplayDto);
     }
-
-
 }

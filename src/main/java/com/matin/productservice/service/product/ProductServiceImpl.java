@@ -25,8 +25,12 @@ import java.util.Optional;
 @Slf4j
 public class ProductServiceImpl implements ProductService {
 
-    private static final Integer firstPage = 0;
-    private static final Integer commentForMainPage = 3;
+    private static final Integer FIRST_PAGE = 0;
+    private static final Integer COMMENTS_FOR_MAIN_PAGE = 3;
+
+    private final ProductRepository productRepository;
+    private final ToProductMapper toProductMapper = Mappers.getMapper(ToProductMapper.class);
+    private final ToProductDtoMapper toProductDtoMapper = Mappers.getMapper(ToProductDtoMapper.class);
 
     @Autowired
     @Lazy
@@ -36,38 +40,30 @@ public class ProductServiceImpl implements ProductService {
     @Lazy
     private VoteService voteService;
 
-    private final ProductRepository productRepository;
-
-    private final ToProductMapper toProductMapper = Mappers.getMapper(ToProductMapper.class);
-    private final ToProductDtoMapper toProductDtoMapper = Mappers.getMapper(ToProductDtoMapper.class);
-
     public ProductServiceImpl(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
     @Override
     public Boolean createProduct(ProductDto productDto) throws Exception {
-
         try {
             Product product = toProductMapper.productDtoToProduct(productDto);
             productRepository.save(product);
             return true;
         } catch (Exception e) {
+            log.error("Failed to create product: {}", productDto, e);
             throw new Exception(e.getMessage());
         }
-
-
     }
 
     @Override
     public List<ProductDto> getAllProducts() {
         List<Product> products = productRepository.findAll();
-        if(products.size() != 0) {
-            return products.stream().map(toProductDtoMapper::toProductDto).toList();
-        } else {
-            log.warn("THERE WERE NO FILES TO BE RENDERED.");
+        if (products.isEmpty()) {
+            log.warn("No products were found");
             throw new RuntimeException("No products were found!");
         }
+        return products.stream().map(toProductDtoMapper::toProductDto).toList();
     }
 
     @Override
@@ -79,12 +75,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Optional<Product> getProductById(Long id) {
         Optional<Product> product = productRepository.findById(id);
-        if(product.isPresent()) {
-            return product;
-        }else {
-            log.warn("REQUESTED OBJECT DID NOT EXIST.");
+        if (!product.isPresent()) {
+            log.warn("Requested product with ID {} does not exist", id);
             throw new RuntimeException("Item was not found");
         }
+        return product;
     }
 
     @Override
@@ -97,46 +92,40 @@ public class ProductServiceImpl implements ProductService {
     @Override
     @Transactional
     public Boolean changeProductDisplaySetting(ProductDisplayDto productDisplayDto) {
-
-        try{
+        try {
             Optional<Product> product = getProductById(productDisplayDto.getProductId());
             product.get().setIsVisible(productDisplayDto.getEnable());
             return true;
-        } catch (Exception e){
-            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+        } catch (Exception e) {
+            log.error("Failed to change product display setting for product ID: {}", productDisplayDto.getProductId(), e);
             throw new RuntimeException(e.getMessage());
         }
-
     }
 
     @Override
     @Transactional
     public Boolean changeProductCommentSetting(ProductDisplayDto productDisplayDto) {
-
-        try{
+        try {
             Optional<Product> product = getProductById(productDisplayDto.getProductId());
             product.get().setCanComment(productDisplayDto.getEnable());
             return true;
-        } catch (Exception e){
-            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+        } catch (Exception e) {
+            log.error("Failed to change product comment setting for product ID: {}", productDisplayDto.getProductId(), e);
             throw new RuntimeException(e.getMessage());
         }
-
     }
 
     @Override
     @Transactional
     public Boolean changeProductVoteSetting(ProductDisplayDto productDisplayDto) {
-
-        try{
+        try {
             Optional<Product> product = getProductById(productDisplayDto.getProductId());
             product.get().setCanVote(productDisplayDto.getEnable());
             return true;
-        } catch (Exception e){
-            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+        } catch (Exception e) {
+            log.error("Failed to change product vote setting for product ID: {}", productDisplayDto.getProductId(), e);
             throw new RuntimeException(e.getMessage());
         }
-
     }
 
     private List<ProductDto> getProductCommentAndVoteForMainPage(List<Product> products) {
@@ -144,7 +133,7 @@ public class ProductServiceImpl implements ProductService {
                 .map(product -> {
                     ProductDto productDto = toProductDtoMapper.toProductDto(product);
                     // Set comments
-                    productDto.setComments(commentService.getProductCommentsForMainPage(product, firstPage, commentForMainPage));
+                    productDto.setComments(commentService.getProductCommentsForMainPage(product, FIRST_PAGE, COMMENTS_FOR_MAIN_PAGE));
 
                     // Set votesCount and averageVote
                     productDto.setVotesCount(voteService.getVoteCountByProductAndState(product));
@@ -156,11 +145,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     private ProductDto checkProductPresent(Optional<Product> product) {
-        if(product.isPresent()) {
+        if (product.isPresent()) {
             return toProductDtoMapper.toProductDto(product.get());
-        } else
-            log.warn("REQUESTED OBJECT DID NOT EXIST.");
+        } else {
+            log.warn("Requested product does not exist");
             throw new RuntimeException("Item was not found");
+        }
     }
-
 }

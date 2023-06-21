@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class VoteServiceImpl implements VoteService{
+public class VoteServiceImpl implements VoteService {
 
     private final VoteRepository voteRepository;
     private final ProductService productService;
@@ -30,46 +30,44 @@ public class VoteServiceImpl implements VoteService{
 
     @Override
     public Boolean voteOnProduct(Long productId, VoteDto voteDto) {
-
         try {
             Product product = checkCanVoteOnProduct(productId);
             Vote vote = voteMapper.toVote(voteDto);
             vote.setProduct(product);
             voteRepository.save(vote);
             return true;
-        }catch (Exception e) {
-            log.error("THERE WAS AN ERROR LEAVING A VOTE ON THE PRODUCT WITH ID " + productId);
+        } catch (Exception e) {
+            log.error("There was an error leaving a vote on the product with ID: {}", productId, e);
             throw new RuntimeException(e.getMessage());
         }
     }
 
     private Product checkCanVoteOnProduct(Long productId) {
         Product product = getProduct(productId);
-        if(!product.getCanVote()) {
-            throw new RuntimeException("CANT VOTE ON THIS PRODUCT");
+        if (!product.getCanVote()) {
+            throw new RuntimeException("Cannot vote on this product");
         }
         return product;
     }
 
     @Override
     public ProductVoteDto getProductVoteDetails(Long productId) {
-
         Product product = getProduct(productId);
-        try{
+        try {
             ProductVoteDto productVoteDto = new ProductVoteDto();
             productVoteDto.setProductId(productId);
             productVoteDto.setVotesCount(getVoteCountByProductAndState(product));
             productVoteDto.setAverageVote(getAverageVoteValueByProductAndState(product));
             return productVoteDto;
         } catch (Exception e) {
-            log.error("AN ERROR OCCURRED WHILE TRYING CALCULATE VOTES FOR PRODUCT WITH THE ID " + productId);
+            log.error("An error occurred while trying to calculate votes for product with ID: {}", productId, e);
             throw new RuntimeException(e.getMessage());
         }
-
     }
 
     private Product getProduct(Long productId) {
-        return productService.getProductById(productId).orElseThrow(() -> new RuntimeException("PRODUCT NOT FOUND"));
+        return productService.getProductById(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found"));
     }
 
     @Override
