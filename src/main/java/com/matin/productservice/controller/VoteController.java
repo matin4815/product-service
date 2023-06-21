@@ -1,5 +1,7 @@
 package com.matin.productservice.controller;
 
+import com.matin.productservice.dto.comment.ChangeCommentStatusDto;
+import com.matin.productservice.dto.vote.ChangeVoteStatusDto;
 import com.matin.productservice.dto.vote.ProductVoteDto;
 import com.matin.productservice.dto.vote.VoteDto;
 import com.matin.productservice.service.vote.VoteService;
@@ -30,5 +32,12 @@ public class VoteController {
             , description = "Returns a products Accepted votes count and average")
     public ProductVoteDto getProductVoteDetails(@PathVariable Long productId) {
         return voteService.getProductVoteDetails(productId);
+    }
+
+    @PostMapping("/product/change-status")
+    @Operation(summary = "Updates a Products votes status"
+            , description = "Updates a Products votes status")
+    public Boolean changeVoteStatus(@Valid @RequestBody ChangeVoteStatusDto changeVoteStatusDto) {
+        return voteService.changeVoteStatus(changeVoteStatusDto);
     }
 }

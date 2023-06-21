@@ -3,11 +3,14 @@ package com.matin.productservice.service.comment;
 import com.matin.productservice.dal.entity.Comment;
 import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dal.repository.CommentRepository;
+import com.matin.productservice.dto.comment.ChangeCommentStatusDto;
 import com.matin.productservice.dto.comment.CommentDto;
+import com.matin.productservice.dto.comment.CommentStatusDto;
 import com.matin.productservice.enums.CommentState;
 import com.matin.productservice.mapper.CommentMapper;
 import com.matin.productservice.service.product.ProductService;
 import com.matin.productservice.utils.pagination.PageableFactory;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
 import org.springframework.data.domain.Pageable;
@@ -81,4 +84,26 @@ public class CommentServiceImpl implements CommentService {
             throw new RuntimeException(e.getMessage());
         }
     }
+
+    @Override
+    @Transactional
+    public Boolean changeCommentStatus(ChangeCommentStatusDto changeCommentStatusDto) {
+        Product product = getProduct(changeCommentStatusDto.getProductId());
+        List<Comment> comments = commentRepository.findCommentByProduct(product);
+        List<CommentStatusDto> newStatusList = changeCommentStatusDto.getNewStatus();
+
+        updateCommentStatus(comments, newStatusList);
+
+        commentRepository.saveAll(comments);
+
+        return true;
+    }
+
+    private void updateCommentStatus(List<Comment> comments, List<CommentStatusDto> newStatusList) {
+        comments.forEach(comment -> newStatusList.stream()
+                .filter(newStatus -> comment.getId().equals(newStatus.getId()))
+                .findFirst()
+                .ifPresent(newStatus -> comment.setState(newStatus.getCommentState())));
+    }
+
 }

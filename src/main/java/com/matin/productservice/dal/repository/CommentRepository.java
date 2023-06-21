@@ -14,4 +14,6 @@ public interface CommentRepository extends JpaRepository<Comment, Long> {
 
     List<Comment> findCommentByProductAndState(Product product, CommentState commentState, Pageable pageable);
 
+    List<Comment> findCommentByProduct(Product product);
+
 }

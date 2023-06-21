@@ -8,6 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface VoteRepository extends JpaRepository<Vote, Long> {
 
@@ -16,5 +18,7 @@ public interface VoteRepository extends JpaRepository<Vote, Long> {
 
     @Query("SELECT AVG(v.value) FROM Vote v WHERE v.product = :product AND v.state = :state")
     Double getAverageVoteValueByProductAndState(@Param("product") Product product, @Param("state") VoteState state);
+
+    List<Vote> findVoteByProduct(Product product);
 
 }

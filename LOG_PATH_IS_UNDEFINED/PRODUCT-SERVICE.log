@@ -6469,3 +6469,73 @@ Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletReque
                 Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.matin.productservice.controller.CommentController
 [2023-06-21 14:37:07.576] INFO  matin-Lenovo-G50-70 [nio-8181-exec-9] org.springdoc.api.AbstractOpenApiResource :
                 Init duration for springdoc-openapi is: 1440 ms
+[2023-06-21 14:43:22.286] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 14:43:22.291] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 14:43:22.296] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-21 15:56:56.559] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-21 15:56:56.659] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 236106 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-21 15:56:56.663] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-21 15:56:58.246] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-21 15:56:58.387] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 129 ms. Found 5 JPA repository interfaces.
+[2023-06-21 15:56:58.648] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=2a952394-4d25-3b74-ab0a-0fee709d8422
+[2023-06-21 15:56:59.229] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-21 15:56:59.240] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-21 15:56:59.242] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-21 15:56:59.243] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-21 15:56:59.401] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-21 15:56:59.402] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2602 ms
+[2023-06-21 15:56:59.634] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-21 15:56:59.705] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-21 15:56:59.712] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-21 15:56:59.882] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 15:57:00.047] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-21 15:57:00.064] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-21 15:57:00.317] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63a7781
+[2023-06-21 15:57:00.320] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-21 15:57:00.384] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@5a0f87e5
+[2023-06-21 15:57:00.752] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-21 15:57:02.221] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-21 15:57:02.650] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 15:57:03.650] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-21 15:57:04.470] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-21 15:57:06.621] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-21 15:57:06.677] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-21 15:57:06.716] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 11.409 seconds (process running for 14.59)
+[2023-06-21 15:58:48.291] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-21 15:58:48.297] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-21 15:58:48.326] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.

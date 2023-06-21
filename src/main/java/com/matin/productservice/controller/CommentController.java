@@ -1,5 +1,6 @@
 package com.matin.productservice.controller;
 
+import com.matin.productservice.dto.comment.ChangeCommentStatusDto;
 import com.matin.productservice.dto.comment.CommentDto;
 import com.matin.productservice.service.comment.CommentService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,5 +32,12 @@ public class CommentController {
             , description = "Returns a products Accepted comments")
     public List<CommentDto> getProductComments(@PathVariable Long productId, @RequestParam(defaultValue = "0") Integer page) {
         return commentService.getProductComments(productId, page);
+    }
+
+    @PostMapping("/product/change-status")
+    @Operation(summary = "Updates a Products comments status"
+            , description = "Updates a Products comments status")
+    public Boolean changeCommentStatus(@Valid @RequestBody ChangeCommentStatusDto changeCommentStatusDto) {
+        return commentService.changeCommentStatus(changeCommentStatusDto);
     }
 }
