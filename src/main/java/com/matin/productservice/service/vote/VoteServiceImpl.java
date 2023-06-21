@@ -91,14 +91,21 @@ public class VoteServiceImpl implements VoteService {
     @Override
     @Transactional
     public Boolean changeVoteStatus(ChangeVoteStatusDto changeVoteStatusDto) {
-        Product product = getProduct(changeVoteStatusDto.getProductId());
-        List<Vote> votes = voteRepository.findVoteByProduct(product);
-        List<VoteStatusDto> newStatusList = changeVoteStatusDto.getNewStatus();
+        try {
+            Product product = getProduct(changeVoteStatusDto.getProductId());
+            List<Vote> votes = voteRepository.findVoteByProduct(product);
+            List<VoteStatusDto> newStatusList = changeVoteStatusDto.getNewStatus();
 
-        updateVotesStatus(votes, newStatusList);
+            updateVotesStatus(votes, newStatusList);
 
-        voteRepository.saveAll(votes);
-        return true;
+            voteRepository.saveAll(votes);
+            return true;
+        }catch (Exception e) {
+            log.error("Changing the votes status for product with the id=" + changeVoteStatusDto.getProductId()
+                    +" has failed " + e.getMessage() );
+            throw new RuntimeException(e.getMessage());
+        }
+
     }
 
     private void updateVotesStatus(List<Vote> votes, List<VoteStatusDto> newStatusList) {

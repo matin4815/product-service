@@ -88,15 +88,22 @@ public class CommentServiceImpl implements CommentService {
     @Override
     @Transactional
     public Boolean changeCommentStatus(ChangeCommentStatusDto changeCommentStatusDto) {
-        Product product = getProduct(changeCommentStatusDto.getProductId());
-        List<Comment> comments = commentRepository.findCommentByProduct(product);
-        List<CommentStatusDto> newStatusList = changeCommentStatusDto.getNewStatus();
+        try{
+            Product product = getProduct(changeCommentStatusDto.getProductId());
+            List<Comment> comments = commentRepository.findCommentByProduct(product);
+            List<CommentStatusDto> newStatusList = changeCommentStatusDto.getNewStatus();
 
-        updateCommentStatus(comments, newStatusList);
+            updateCommentStatus(comments, newStatusList);
 
-        commentRepository.saveAll(comments);
+            commentRepository.saveAll(comments);
 
-        return true;
+            return true;
+        }catch (Exception e) {
+            log.error("Changing the comments status for product with the id=" + changeCommentStatusDto.getProductId()
+                    +" has failed " + e.getMessage() );
+            throw new RuntimeException(e.getMessage());
+        }
+
     }
 
     private void updateCommentStatus(List<Comment> comments, List<CommentStatusDto> newStatusList) {
