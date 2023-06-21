@@ -36,6 +36,12 @@ public class Product {
     @Column(name = "is_visible", columnDefinition = "boolean default true", nullable = false)
     private Boolean isVisible;
 
+    @Column(name = "can_comment", nullable = false)
+    private Boolean canComment;
+
+    @Column(name = "can_vote", nullable = false)
+    private Boolean canVote;
+
     @Transient
     private List<Comment> comments;
 
@@ -44,18 +50,5 @@ public class Product {
 
     @Transient
     private Double averageVote;
-
-
-//    public void calculateVotesCountAndAverage(List<Vote> votes) {
-//        this.votesCount = votes.size();
-//        if (votesCount > 0) {
-//            double sum = votes.stream()
-//
-//                    .sum();
-//            this.averageVote = (double) sum / votesCount;
-//        } else {
-//            this.averageVote = 0;
-//        }
-//    }
 
 }

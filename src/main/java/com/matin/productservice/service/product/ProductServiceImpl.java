@@ -3,12 +3,14 @@ package com.matin.productservice.service.product;
 import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dal.repository.ProductRepository;
 import com.matin.productservice.dto.comment.CommentDto;
+import com.matin.productservice.dto.product.ProductDisplayDto;
 import com.matin.productservice.dto.product.ProductDto;
 import com.matin.productservice.mapper.ToProductDtoMapper;
 import com.matin.productservice.mapper.ToProductMapper;
 import com.matin.productservice.service.comment.CommentService;
 import com.matin.productservice.service.vote.VoteService;
 import com.matin.productservice.utils.pagination.PageableFactory;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -90,6 +92,51 @@ public class ProductServiceImpl implements ProductService {
         Pageable pageable = PageableFactory.createPageable(page);
         List<Product> products = productRepository.findAllByIsVisibleTrue(pageable);
         return getProductCommentAndVoteForMainPage(products);
+    }
+
+    @Override
+    @Transactional
+    public Boolean changeProductDisplaySetting(ProductDisplayDto productDisplayDto) {
+
+        try{
+            Optional<Product> product = getProductById(productDisplayDto.getProductId());
+            product.get().setIsVisible(productDisplayDto.getEnable());
+            return true;
+        } catch (Exception e){
+            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+            throw new RuntimeException(e.getMessage());
+        }
+
+    }
+
+    @Override
+    @Transactional
+    public Boolean changeProductCommentSetting(ProductDisplayDto productDisplayDto) {
+
+        try{
+            Optional<Product> product = getProductById(productDisplayDto.getProductId());
+            product.get().setCanComment(productDisplayDto.getEnable());
+            return true;
+        } catch (Exception e){
+            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+            throw new RuntimeException(e.getMessage());
+        }
+
+    }
+
+    @Override
+    @Transactional
+    public Boolean changeProductVoteSetting(ProductDisplayDto productDisplayDto) {
+
+        try{
+            Optional<Product> product = getProductById(productDisplayDto.getProductId());
+            product.get().setCanVote(productDisplayDto.getEnable());
+            return true;
+        } catch (Exception e){
+            log.error("PRODUCT DISPLAY STATUS COULD NOT BE CHANGED");
+            throw new RuntimeException(e.getMessage());
+        }
+
     }
 
     private List<ProductDto> getProductCommentAndVoteForMainPage(List<Product> products) {

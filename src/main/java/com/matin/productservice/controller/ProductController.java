@@ -1,6 +1,7 @@
 package com.matin.productservice.controller;
 
 import com.matin.productservice.dal.entity.Product;
+import com.matin.productservice.dto.product.ProductDisplayDto;
 import com.matin.productservice.dto.product.ProductDto;
 import com.matin.productservice.service.product.ProductService;
 import jakarta.validation.Valid;
@@ -43,6 +44,21 @@ public class ProductController {
     @GetMapping("/product")
     public Product getProductById(@RequestParam Long id) {
         return productService.getProductById(id).get();
+    }
+
+    @PostMapping("/display")
+    public Boolean changeProductDisplaySetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+        return productService.changeProductDisplaySetting(productDisplayDto);
+    }
+
+    @PostMapping("/comment/option")
+    public Boolean changeProductCommentSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+        return productService.changeProductCommentSetting(productDisplayDto);
+    }
+
+    @PostMapping("/vote/option")
+    public Boolean changeProductVoteSetting(@RequestBody @Valid ProductDisplayDto productDisplayDto) {
+        return productService.changeProductVoteSetting(productDisplayDto);
     }
 
 

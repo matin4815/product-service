@@ -1,6 +1,7 @@
 package com.matin.productservice.dto.product;
 
 import com.matin.productservice.dto.referencedata.ReferenceTransferDataDto;
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -20,5 +21,6 @@ public class BaseProductDto {
 
     @NotNull
     private ReferenceTransferDataDto type;
+
 
 }

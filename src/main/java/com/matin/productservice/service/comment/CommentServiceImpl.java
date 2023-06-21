@@ -36,7 +36,7 @@ public class CommentServiceImpl implements CommentService{
     public Boolean addCommentToProduct(Long productId, CommentDto commentDto) {
 
         try{
-            Product product = getProduct(productId);
+            Product product = checkCanCommentOnProduct(productId);
             Comment comment = commentMapper.toComment(commentDto);
             comment.setProduct(product);
             commentRepository.save(comment);
@@ -46,6 +46,14 @@ public class CommentServiceImpl implements CommentService{
             throw new RuntimeException(e.getMessage());
         }
 
+    }
+
+    private Product checkCanCommentOnProduct(Long productId) {
+        Product product = getProduct(productId);
+        if(!product.getCanComment()){
+            throw new RuntimeException("NO COMMENTS ON THIS PRODUCT");
+        }
+        return product;
     }
 
     private Product getProduct(Long productId) {

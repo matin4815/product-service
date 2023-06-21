@@ -32,7 +32,7 @@ public class VoteServiceImpl implements VoteService{
     public Boolean voteOnProduct(Long productId, VoteDto voteDto) {
 
         try {
-            Product product = getProduct(productId);
+            Product product = checkCanVoteOnProduct(productId);
             Vote vote = voteMapper.toVote(voteDto);
             vote.setProduct(product);
             voteRepository.save(vote);
@@ -41,6 +41,14 @@ public class VoteServiceImpl implements VoteService{
             log.error("THERE WAS AN ERROR LEAVING A VOTE ON THE PRODUCT WITH ID " + productId);
             throw new RuntimeException(e.getMessage());
         }
+    }
+
+    private Product checkCanVoteOnProduct(Long productId) {
+        Product product = getProduct(productId);
+        if(!product.getCanVote()) {
+            throw new RuntimeException("CANT VOTE ON THIS PRODUCT");
+        }
+        return product;
     }
 
     @Override

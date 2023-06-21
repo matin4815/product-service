@@ -12,6 +12,10 @@ public class ProductDto extends BaseProductDto{
 
     private Boolean isVisible = true;
 
+    private Boolean canComment = true;
+
+    private Boolean canVote = true;
+
     private List<CommentDto> comments;
 
     private Integer votesCount;
