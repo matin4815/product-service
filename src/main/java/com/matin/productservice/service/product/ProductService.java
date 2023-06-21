@@ -15,4 +15,6 @@ public interface ProductService {
     ProductDto getProductByName(String name);
 
     Optional<Product> getProductById(Long id);
+
+    List<ProductDto> getProductsPaginated(Integer page);
 }

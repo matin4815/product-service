@@ -2,11 +2,18 @@ package com.matin.productservice.service.product;
 
 import com.matin.productservice.dal.entity.Product;
 import com.matin.productservice.dal.repository.ProductRepository;
+import com.matin.productservice.dto.comment.CommentDto;
 import com.matin.productservice.dto.product.ProductDto;
 import com.matin.productservice.mapper.ToProductDtoMapper;
 import com.matin.productservice.mapper.ToProductMapper;
+import com.matin.productservice.service.comment.CommentService;
+import com.matin.productservice.service.vote.VoteService;
+import com.matin.productservice.utils.pagination.PageableFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.factory.Mappers;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +22,17 @@ import java.util.Optional;
 @Service
 @Slf4j
 public class ProductServiceImpl implements ProductService {
+
+    private static final Integer firstPage = 0;
+    private static final Integer commentForMainPage = 3;
+
+    @Autowired
+    @Lazy
+    private CommentService commentService;
+
+    @Autowired
+    @Lazy
+    private VoteService voteService;
 
     private final ProductRepository productRepository;
 
@@ -65,6 +83,29 @@ public class ProductServiceImpl implements ProductService {
             log.warn("REQUESTED OBJECT DID NOT EXIST.");
             throw new RuntimeException("Item was not found");
         }
+    }
+
+    @Override
+    public List<ProductDto> getProductsPaginated(Integer page) {
+        Pageable pageable = PageableFactory.createPageable(page);
+        List<Product> products = productRepository.findAllByIsVisibleTrue(pageable);
+        return getProductCommentAndVoteForMainPage(products);
+    }
+
+    private List<ProductDto> getProductCommentAndVoteForMainPage(List<Product> products) {
+        return products.stream()
+                .map(product -> {
+                    ProductDto productDto = toProductDtoMapper.toProductDto(product);
+                    // Set comments
+                    productDto.setComments(commentService.getProductCommentsForMainPage(product, firstPage, commentForMainPage));
+
+                    // Set votesCount and averageVote
+                    productDto.setVotesCount(voteService.getVoteCountByProductAndState(product));
+                    productDto.setAverageVote(voteService.getAverageVoteValueByProductAndState(product));
+
+                    return productDto;
+                })
+                .toList();
     }
 
     private ProductDto checkProductPresent(Optional<Product> product) {

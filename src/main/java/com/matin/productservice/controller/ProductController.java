@@ -30,6 +30,11 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
+    @GetMapping("/page")
+    public List<ProductDto> getProductsPaginated(@RequestParam Integer page) {
+        return productService.getProductsPaginated(page);
+    }
+
     @GetMapping("/{name}")
     public ProductDto getProductByName(@PathVariable @NotBlank String name) {
         return productService.getProductByName(name);

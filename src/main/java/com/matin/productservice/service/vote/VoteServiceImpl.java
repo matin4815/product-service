@@ -50,8 +50,8 @@ public class VoteServiceImpl implements VoteService{
         try{
             ProductVoteDto productVoteDto = new ProductVoteDto();
             productVoteDto.setProductId(productId);
-            productVoteDto.setVotesCount(getVoteCountByProductAndState(product, validVoteStatus));
-            productVoteDto.setAverageVote(getAverageVoteValueByProductAndState(product, validVoteStatus));
+            productVoteDto.setVotesCount(getVoteCountByProductAndState(product));
+            productVoteDto.setAverageVote(getAverageVoteValueByProductAndState(product));
             return productVoteDto;
         } catch (Exception e) {
             log.error("AN ERROR OCCURRED WHILE TRYING CALCULATE VOTES FOR PRODUCT WITH THE ID " + productId);
@@ -64,11 +64,13 @@ public class VoteServiceImpl implements VoteService{
         return productService.getProductById(productId).orElseThrow(() -> new RuntimeException("PRODUCT NOT FOUND"));
     }
 
-    private Integer getVoteCountByProductAndState(Product product, VoteState state) {
-        return voteRepository.getVoteCountByProductAndState(product, state);
+    @Override
+    public Integer getVoteCountByProductAndState(Product product) {
+        return voteRepository.getVoteCountByProductAndState(product, VoteServiceImpl.validVoteStatus);
     }
 
-    private Double getAverageVoteValueByProductAndState(Product product, VoteState state) {
-        return voteRepository.getAverageVoteValueByProductAndState(product, state);
+    @Override
+    public Double getAverageVoteValueByProductAndState(Product product) {
+        return voteRepository.getAverageVoteValueByProductAndState(product, VoteServiceImpl.validVoteStatus);
     }
 }

@@ -61,4 +61,12 @@ public class CommentServiceImpl implements CommentService{
 
     }
 
+    @Override
+    public List<CommentDto> getProductCommentsForMainPage(Product product, Integer page, Integer size) {
+
+        Pageable pageable = PageableFactory.createPageable(page, size);
+        return commentMapper.listCommentToCommentDto(commentRepository.findCommentByProductAndState(product, validCommentStatus, pageable));
+
+    }
+
 }
