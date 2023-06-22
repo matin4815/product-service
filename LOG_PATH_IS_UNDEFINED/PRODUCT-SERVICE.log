@@ -743,3 +743,1446 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
                 HikariPool-1 - Shutdown initiated...
 [2023-06-22 00:42:14.309] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
                 HikariPool-1 - Shutdown completed.
+[2023-06-22 00:47:44.249] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 00:47:44.282] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 276 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 00:47:44.282] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 00:47:45.476] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 00:47:45.559] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+[2023-06-22 00:47:45.749] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=2a952394-4d25-3b74-ab0a-0fee709d8422
+[2023-06-22 00:47:46.052] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-22 00:47:46.059] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-22 00:47:46.060] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 00:47:46.060] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 00:47:46.163] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 00:47:46.163] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1844 ms
+[2023-06-22 00:47:46.284] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 00:47:46.330] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 00:47:46.332] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 00:47:46.453] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:47:46.546] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 00:47:46.557] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 00:47:46.744] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e753289
+[2023-06-22 00:47:46.747] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 00:47:46.795] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3dbb3fb7
+[2023-06-22 00:47:47.000] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 00:47:47.736] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 00:47:47.882] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 00:47:48.305] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 00:47:48.691] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 00:47:49.647] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-22 00:47:49.674] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-22 00:47:49.722] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 6.066 seconds (process running for 7.474)
+[2023-06-22 02:04:53.294] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 02:04:53.325] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 02:04:53.349] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 16:55:38.865] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 16:55:38.890] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 17884 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 16:55:38.891] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 16:55:39.945] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 16:55:40.006] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+[2023-06-22 16:55:40.143] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 16:55:40.343] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-22 16:55:40.348] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:55:40.349] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 16:55:40.349] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 16:55:40.414] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 16:55:40.415] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1495 ms
+[2023-06-22 16:55:40.512] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 16:55:40.544] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 16:55:40.546] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 16:55:40.634] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:55:40.704] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 16:55:40.712] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 16:55:40.826] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@139089a4
+[2023-06-22 16:55:40.827] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 16:55:40.866] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@7d7b4e04
+[2023-06-22 16:55:40.995] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:55:41.398] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 16:55:41.519] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:55:41.826] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 16:55:42.045] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 16:55:42.732] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 16:55:42.797] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 16:55:42.849] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 16:55:42.872] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 16:55:42.875] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 16:55:42.889] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 16:55:43.508] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 16:55:43.509] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 16:55:43.511] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 16:55:43.515] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687440343514 with initial instances count: 0
+[2023-06-22 16:55:43.518] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application UNKNOWN with eureka with status UP
+[2023-06-22 16:55:43.518] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440343518, current=UP, previous=STARTING]
+[2023-06-22 16:55:43.520] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:55:43.520] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:55:43.540] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-22 16:55:43.541] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 8181
+[2023-06-22 16:55:43.587] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 5.038 seconds (process running for 6.488)
+[2023-06-22 16:55:43.634] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:56:13.521] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 16:56:13.522] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 16:56:13.522] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 16:56:13.522] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 16:56:13.522] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 16:56:13.522] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: false
+[2023-06-22 16:56:13.523] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 16:56:13.544] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 16:57:31.117] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application UNKNOWN with eureka with status DOWN
+[2023-06-22 16:57:31.118] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440451118, current=DOWN, previous=UP]
+[2023-06-22 16:57:31.118] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:57:31.125] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:57:31.134] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:57:31.136] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 16:57:31.139] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 16:57:31.140] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 16:57:35.011] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 16:57:35.037] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 2996 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 16:57:35.038] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 16:57:35.644] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 16:57:35.708] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+[2023-06-22 16:57:35.859] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 16:57:36.136] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-22 16:57:36.143] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:57:36.143] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 16:57:36.143] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 16:57:36.216] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 16:57:36.216] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1148 ms
+[2023-06-22 16:57:36.308] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 16:57:36.346] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 16:57:36.348] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 16:57:36.450] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:57:36.517] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 16:57:36.528] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 16:57:36.646] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5be7b749
+[2023-06-22 16:57:36.647] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 16:57:36.681] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@6591f8ea
+[2023-06-22 16:57:36.861] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:57:37.365] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 16:57:37.481] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:57:37.836] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 16:57:38.083] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 16:57:38.834] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 16:57:38.920] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 16:57:38.980] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 16:57:39.006] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 16:57:39.009] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 16:57:39.022] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 16:57:39.022] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 16:57:39.023] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 16:57:39.023] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 16:57:39.023] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 16:57:39.023] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 16:57:39.023] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 16:57:39.316] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 16:57:39.318] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 16:57:39.319] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 16:57:39.323] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687440459322 with initial instances count: 1
+[2023-06-22 16:57:39.326] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application UNKNOWN with eureka with status UP
+[2023-06-22 16:57:39.326] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440459326, current=UP, previous=STARTING]
+[2023-06-22 16:57:39.327] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:57:39.327] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:57:39.344] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-22 16:57:39.345] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 8181
+[2023-06-22 16:57:39.361] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:57:39.383] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.673 seconds (process running for 5.504)
+[2023-06-22 16:57:53.459] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application UNKNOWN with eureka with status DOWN
+[2023-06-22 16:57:53.459] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440473459, current=DOWN, previous=UP]
+[2023-06-22 16:57:53.460] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:57:53.467] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:57:53.478] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:57:53.481] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 16:57:53.484] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 16:57:53.485] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 16:58:09.149] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 16:58:09.173] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 12156 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 16:58:09.174] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 16:58:09.820] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 16:58:09.896] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+[2023-06-22 16:58:10.087] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 16:58:10.361] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-22 16:58:10.374] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:58:10.374] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 16:58:10.374] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 16:58:10.460] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 16:58:10.460] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1261 ms
+[2023-06-22 16:58:10.572] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 16:58:10.618] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 16:58:10.621] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 16:58:10.724] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:58:10.803] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 16:58:10.811] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 16:58:10.931] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63326a3a
+[2023-06-22 16:58:10.933] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 16:58:10.961] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@f810c18
+[2023-06-22 16:58:11.106] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:58:11.564] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 16:58:11.660] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:58:11.976] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 16:58:12.235] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 16:58:13.028] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 16:58:13.111] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 16:58:13.165] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 16:58:13.186] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 16:58:13.188] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 16:58:13.202] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 16:58:13.503] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 16:58:13.505] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 16:58:13.507] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 16:58:13.514] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687440493512 with initial instances count: 1
+[2023-06-22 16:58:13.517] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application UNKNOWN with eureka with status UP
+[2023-06-22 16:58:13.517] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440493517, current=UP, previous=STARTING]
+[2023-06-22 16:58:13.520] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:58:13.520] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:58:13.555] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-22 16:58:13.555] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 8181
+[2023-06-22 16:58:13.574] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:58:13.605] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.729 seconds (process running for 5.333)
+[2023-06-22 16:59:41.694] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application UNKNOWN with eureka with status DOWN
+[2023-06-22 16:59:41.694] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440581694, current=DOWN, previous=UP]
+[2023-06-22 16:59:41.694] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181: registering service...
+[2023-06-22 16:59:41.702] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_UNKNOWN/DESKTOP-9D8RCUQ:8181 - registration status: 204
+[2023-06-22 16:59:41.711] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:59:41.714] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 16:59:41.717] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 16:59:41.717] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 16:59:44.885] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 16:59:44.912] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 9700 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 16:59:44.912] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 16:59:45.492] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 16:59:45.585] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+[2023-06-22 16:59:45.807] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 16:59:46.088] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 8181 (http)
+[2023-06-22 16:59:46.094] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:59:46.094] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 16:59:46.094] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 16:59:46.175] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 16:59:46.175] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1232 ms
+[2023-06-22 16:59:46.270] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 16:59:46.308] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 16:59:46.310] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 16:59:46.406] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:59:46.479] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 16:59:46.489] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 16:59:46.612] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c0dca15
+[2023-06-22 16:59:46.614] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 16:59:46.644] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@5b3755f4
+[2023-06-22 16:59:46.809] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 16:59:47.315] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 16:59:47.410] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 16:59:47.718] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 16:59:47.967] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 16:59:48.684] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 16:59:48.750] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 16:59:48.840] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 16:59:48.871] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 16:59:48.874] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 16:59:48.891] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 16:59:49.183] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 16:59:49.186] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 16:59:49.187] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 16:59:49.191] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687440589190 with initial instances count: 1
+[2023-06-22 16:59:49.194] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 16:59:49.195] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687440589195, current=UP, previous=STARTING]
+[2023-06-22 16:59:49.199] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8181: registering service...
+[2023-06-22 16:59:49.200] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-8181"]
+[2023-06-22 16:59:49.228] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 8181 (http) with context path ''
+[2023-06-22 16:59:49.229] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 8181
+[2023-06-22 16:59:49.245] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8181 - registration status: 204
+[2023-06-22 16:59:49.266] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.666 seconds (process running for 5.482)
+[2023-06-22 17:04:48.901] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:07:23.361] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:07:23.361] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441043361, current=DOWN, previous=UP]
+[2023-06-22 17:07:23.362] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8181: registering service...
+[2023-06-22 17:07:23.368] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:8181 - registration status: 204
+[2023-06-22 17:07:23.378] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:07:23.380] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:07:23.383] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:07:23.383] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:07:26.651] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:07:26.679] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 7528 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 17:07:26.679] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:07:27.264] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:07:27.326] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+[2023-06-22 17:07:27.487] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 17:07:27.699] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:07:27.704] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:07:27.705] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:07:27.705] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:07:27.777] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:07:27.777] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1070 ms
+[2023-06-22 17:07:27.869] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:07:27.898] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:07:27.899] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:07:27.984] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:07:28.051] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:07:28.059] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:07:28.159] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5501d1c8
+[2023-06-22 17:07:28.160] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:07:28.187] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3d132bb6
+[2023-06-22 17:07:28.334] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:07:28.771] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:07:28.866] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:07:29.159] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 17:07:29.403] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:07:30.100] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:07:30.166] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:07:30.215] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:07:30.229] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 2967 (http) with context path ''
+[2023-06-22 17:07:30.230] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 2967
+[2023-06-22 17:07:30.234] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:07:30.255] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:07:30.258] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:07:30.271] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:07:30.272] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:07:30.531] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:07:30.532] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:07:30.534] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:07:30.537] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441050537 with initial instances count: 2
+[2023-06-22 17:07:30.541] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:07:30.541] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441050541, current=UP, previous=STARTING]
+[2023-06-22 17:07:30.542] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:07:30.573] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:07:30.580] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.198 seconds (process running for 4.984)
+[2023-06-22 17:08:00.693] INFO  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json] stacktrace=org.springframework.web.client.RestClientException: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:118)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1132)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1115)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:865)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:103)
+	... 23 more
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1787)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1803)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext._unwrapAndDeserialize(DefaultDeserializationContext.java:348)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:320)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	... 25 more
+
+[2023-06-22 17:08:00.694] WARN  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]
+[2023-06-22 17:08:00.732] INFO  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json] stacktrace=org.springframework.web.client.RestClientException: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:118)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1132)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1115)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:865)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:103)
+	... 24 more
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Root name ('timestamp') does not match expected ('instance') for type `com.netflix.appinfo.InstanceInfo`
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 2] (through reference chain: com.netflix.appinfo.InstanceInfo["timestamp"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1787)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportPropertyInputMismatch(DeserializationContext.java:1803)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext._unwrapAndDeserialize(DefaultDeserializationContext.java:348)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:320)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
+	... 26 more
+
+[2023-06-22 17:08:00.732] WARN  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: Error while extracting response for type [class com.netflix.appinfo.InstanceInfo] and content type [application/json]
+[2023-06-22 17:08:00.733] ERROR DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-22 17:08:07.528] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:08:07.528] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441087528, current=DOWN, previous=UP]
+[2023-06-22 17:08:07.529] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:08:07.549] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:08:07.552] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:08:07.555] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:08:07.556] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:08:07.582] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:08:07.584] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Unregistering ...
+[2023-06-22 17:08:07.589] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - deregister  status: 200
+[2023-06-22 17:08:07.592] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Completed shut down of DiscoveryClient
+[2023-06-22 17:08:10.945] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:08:10.973] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 12920 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 17:08:10.974] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:08:11.551] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:08:11.614] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+[2023-06-22 17:08:11.766] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 17:08:11.993] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:08:11.998] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:08:11.999] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:08:11.999] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:08:12.067] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:08:12.067] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1066 ms
+[2023-06-22 17:08:12.161] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:08:12.194] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:08:12.195] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:08:12.284] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:08:12.351] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:08:12.359] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:08:12.461] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@671da0f9
+[2023-06-22 17:08:12.463] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:08:12.490] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@448086ab
+[2023-06-22 17:08:12.638] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:08:13.064] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:08:13.161] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:08:13.473] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 17:08:13.724] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:08:14.409] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:08:14.478] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:08:14.538] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:08:14.553] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3026 (http) with context path ''
+[2023-06-22 17:08:14.554] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3026
+[2023-06-22 17:08:14.558] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:08:14.579] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:08:14.582] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:08:14.597] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:08:14.844] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:08:14.846] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:08:14.848] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:08:14.852] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441094851 with initial instances count: 0
+[2023-06-22 17:08:14.855] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:08:14.856] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441094855, current=UP, previous=STARTING]
+[2023-06-22 17:08:14.857] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:08:14.889] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:08:14.894] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.219 seconds (process running for 4.998)
+[2023-06-22 17:08:44.853] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:08:44.853] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:08:44.854] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:08:44.854] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:08:44.854] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:08:44.854] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: false
+[2023-06-22 17:08:44.854] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:08:44.872] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:11:29.172] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:11:29.172] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441289172, current=DOWN, previous=UP]
+[2023-06-22 17:11:29.172] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:11:29.178] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:11:29.188] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:11:29.190] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:11:29.194] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:11:29.194] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:11:32.708] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:11:32.737] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 18168 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 17:11:32.738] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:11:33.316] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:11:33.380] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+[2023-06-22 17:11:33.546] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 17:11:33.828] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:11:33.840] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:11:33.841] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:11:33.841] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:11:33.910] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:11:33.910] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1144 ms
+[2023-06-22 17:11:34.004] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:11:34.032] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:11:34.033] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:11:34.118] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:11:34.188] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:11:34.196] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:11:34.304] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b32e983
+[2023-06-22 17:11:34.305] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:11:34.334] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3cf8a235
+[2023-06-22 17:11:34.494] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:11:34.943] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:11:35.037] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:11:35.340] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 17:11:35.579] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:11:36.306] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:11:36.379] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:11:36.433] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:11:36.448] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3290 (http) with context path ''
+[2023-06-22 17:11:36.449] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3290
+[2023-06-22 17:11:36.453] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:11:36.474] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:11:36.477] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:11:36.490] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:11:36.491] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:11:36.744] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:11:36.746] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:11:36.748] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:11:36.751] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441296751 with initial instances count: 3
+[2023-06-22 17:11:36.755] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:11:36.755] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441296755, current=UP, previous=STARTING]
+[2023-06-22 17:11:36.756] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:11:36.787] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:11:36.794] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 4.359 seconds (process running for 5.116)
+[2023-06-22 17:12:36.789] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1079)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:960)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 23 more
+
+[2023-06-22 17:12:36.789] WARN  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[2023-06-22 17:12:36.810] INFO  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 20 more
+
+[2023-06-22 17:12:36.810] WARN  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[2023-06-22 17:12:36.824] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1079)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:960)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 24 more
+
+[2023-06-22 17:12:36.825] WARN  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[2023-06-22 17:12:36.825] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1079)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:960)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1475)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1442)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2023-06-22 17:12:36.854] INFO  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient :
+                Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:646)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:93)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
+	... 21 more
+
+[2023-06-22 17:12:36.855] WARN  DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient :
+                Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+[2023-06-22 17:12:36.855] ERROR DESKTOP-9D8RCUQ [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:837)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1401)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-22 17:12:43.930] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-22 17:12:43.931] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441363931, current=DOWN, previous=UP]
+[2023-06-22 17:12:43.931] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:12:43.947] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:12:43.949] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-22 17:12:43.954] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-22 17:12:43.956] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-22 17:12:44.068] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:12:44.069] INFO  DESKTOP-9D8RCUQ [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Unregistering ...
+[2023-06-22 17:12:51.700] INFO  DESKTOP-9D8RCUQ [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-22 17:12:51.727] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.7 with PID 10328 (C:\Users\Mosavi\IdeaProjects\product-service\target\classes started by Mosavi in C:\Users\Mosavi\IdeaProjects\product-service)
+[2023-06-22 17:12:51.727] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-22 17:12:52.350] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-22 17:12:52.418] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+[2023-06-22 17:12:52.588] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0b08681e-2b69-3e7e-a7cb-07d45ac79390
+[2023-06-22 17:12:52.816] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-22 17:12:52.822] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:12:52.822] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-22 17:12:52.822] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-22 17:12:52.891] INFO  DESKTOP-9D8RCUQ [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-22 17:12:52.891] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 1137 ms
+[2023-06-22 17:12:52.990] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-22 17:12:53.018] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-22 17:12:53.020] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-22 17:12:53.110] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:12:53.176] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-22 17:12:53.185] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-22 17:12:53.421] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@126675fd
+[2023-06-22 17:12:53.423] INFO  DESKTOP-9D8RCUQ [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-22 17:12:53.457] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3caf5c96
+[2023-06-22 17:12:53.640] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-22 17:12:54.255] INFO  DESKTOP-9D8RCUQ [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-22 17:12:54.394] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-22 17:12:55.116] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-22 17:12:55.474] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-22 17:12:56.383] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-22 17:12:56.460] WARN  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-22 17:12:56.513] INFO  DESKTOP-9D8RCUQ [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-22 17:12:56.532] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 3369 (http) with context path ''
+[2023-06-22 17:12:56.533] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 3369
+[2023-06-22 17:12:56.538] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-22 17:12:56.564] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-22 17:12:56.567] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-22 17:12:56.584] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:12:56.877] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:12:56.879] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-22 17:12:56.880] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-22 17:12:56.884] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687441376883 with initial instances count: 0
+[2023-06-22 17:12:56.887] INFO  DESKTOP-9D8RCUQ [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-22 17:12:56.888] INFO  DESKTOP-9D8RCUQ [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687441376888, current=UP, previous=STARTING]
+[2023-06-22 17:12:56.889] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0: registering service...
+[2023-06-22 17:12:56.940] INFO  DESKTOP-9D8RCUQ [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 5.539 seconds (process running for 6.346)
+[2023-06-22 17:12:56.941] INFO  DESKTOP-9D8RCUQ [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/DESKTOP-9D8RCUQ:product-service:0 - registration status: 204
+[2023-06-22 17:13:26.888] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: false
+[2023-06-22 17:13:26.889] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-22 17:13:26.904] INFO  DESKTOP-9D8RCUQ [freshExecutor-0] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-22 17:17:56.598] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:22:56.623] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:27:56.633] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:28:01.877] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-22 17:28:01.878] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-22 17:28:01.945] INFO  DESKTOP-9D8RCUQ [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 67 ms
+[2023-06-22 17:32:56.651] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:37:56.666] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:42:56.668] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-22 17:47:56.679] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration

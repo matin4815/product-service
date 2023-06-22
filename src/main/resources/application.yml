@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: product-service
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
@@ -9,5 +11,5 @@ spring:
 
 
 server:
-  port: 8181
+  port: 0
 
