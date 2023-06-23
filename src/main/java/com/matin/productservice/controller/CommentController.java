@@ -1,5 +1,6 @@
 package com.matin.productservice.controller;
 
+import com.matin.productservice.annotation.purchase.PurchasedAccess;
 import com.matin.productservice.dto.comment.ChangeCommentStatusDto;
 import com.matin.productservice.dto.comment.CommentDto;
 import com.matin.productservice.service.comment.CommentService;
@@ -23,6 +24,7 @@ public class CommentController {
     @PostMapping("/products/{productId}")
     @Operation(summary = "Add comment to a product"
             , description = "Checks if a product has the add comment activated and if so adds the comment")
+    @PurchasedAccess
     public Boolean addCommentToProduct(@PathVariable Long productId, @Valid @RequestBody CommentDto commentDto) {
         return commentService.addCommentToProduct(productId, commentDto);
     }
@@ -30,6 +32,7 @@ public class CommentController {
     @GetMapping("/products/{productId}")
     @Operation(summary = "Returns a products comments"
             , description = "Returns a products Accepted comments")
+    @PurchasedAccess
     public List<CommentDto> getProductComments(@PathVariable Long productId, @RequestParam(defaultValue = "0") Integer page) {
         return commentService.getProductComments(productId, page);
     }
