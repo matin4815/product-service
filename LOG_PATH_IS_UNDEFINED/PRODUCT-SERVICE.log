@@ -2186,6 +2186,356 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
                 Resolving eureka endpoints via configuration
 [2023-06-22 17:47:56.679] INFO  DESKTOP-9D8RCUQ [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
                 Resolving eureka endpoints via configuration
+[2023-06-24 12:10:41.609] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:10:41.688] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 40164 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:10:41.690] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:10:43.038] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:10:43.159] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 111 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:10:43.490] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0255feb1-6af1-3fef-9ace-34193aa59e97
+[2023-06-24 12:10:43.614] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:10:44.139] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:10:44.148] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:10:44.150] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:10:44.150] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:10:44.298] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:10:44.299] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2518 ms
+[2023-06-24 12:10:44.497] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:10:44.540] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:10:44.543] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:10:44.705] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:10:44.843] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:10:44.857] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:10:45.892] ERROR matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:229)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:197)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.productservice.ProductServiceApplication.main(ProductServiceApplication.java:12)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 48 common frames omitted
+[2023-06-24 12:10:45.895] WARN  matin-Lenovo-G50-70 [           main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator :
+                HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:229)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:197)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.productservice.ProductServiceApplication.main(ProductServiceApplication.java:12)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 48 common frames omitted
+[2023-06-24 12:10:45.897] ERROR matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+[2023-06-24 12:10:45.898] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext :
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+[2023-06-24 12:10:45.901] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Stopping service [Tomcat]
+[2023-06-24 12:10:45.922] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger :
+                
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2023-06-24 12:10:45.944] ERROR matin-Lenovo-G50-70 [           main] org.springframework.boot.SpringApplication :
+                Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.matin.productservice.ProductServiceApplication.main(ProductServiceApplication.java:12)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:277)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:229)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:197)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:188)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:274)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	... 31 common frames omitted
+[2023-06-24 12:11:05.679] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:11:05.731] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 40307 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:11:05.734] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:11:06.856] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:11:06.970] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:11:07.244] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0255feb1-6af1-3fef-9ace-34193aa59e97
+[2023-06-24 12:11:07.339] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:11:07.785] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:11:07.794] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:11:07.796] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:11:07.796] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:11:07.930] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:11:07.931] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2132 ms
+[2023-06-24 12:11:08.103] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:11:08.146] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:11:08.150] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:11:08.276] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:11:08.387] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:11:08.399] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:11:08.569] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1029cf9
+[2023-06-24 12:11:08.571] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 12:11:08.634] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@f3876ef
+[2023-06-24 12:11:08.868] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:11:09.618] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 12:11:09.982] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:11:10.197] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 12:11:10.328] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'admin-service' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 12:11:10.939] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-24 12:11:12.696] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 12:11:12.766] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 12:11:12.844] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:11:12.863] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 40643 (http) with context path ''
+[2023-06-24 12:11:12.865] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 40643
+[2023-06-24 12:11:12.870] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 12:11:12.908] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 12:11:12.913] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 12:11:12.939] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 12:11:13.424] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 12:11:13.428] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 12:11:13.431] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 12:11:13.437] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687596073436 with initial instances count: 1
+[2023-06-24 12:11:13.446] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application ADMIN-PANEL with eureka with status UP
+[2023-06-24 12:11:13.447] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687596073447, current=UP, previous=STARTING]
+[2023-06-24 12:11:13.449] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0: registering service...
+[2023-06-24 12:11:13.468] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 8.308 seconds (process running for 10.202)
+[2023-06-24 12:11:13.505] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0 - registration status: 204
+[2023-06-24 12:13:10.530] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-24 12:13:10.531] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-24 12:13:10.532] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 1 ms
+[2023-06-24 12:16:12.942] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:20:23.108] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application ADMIN-PANEL with eureka with status DOWN
+[2023-06-24 12:20:23.109] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687596623109, current=DOWN, previous=UP]
+[2023-06-24 12:20:23.109] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0: registering service...
+[2023-06-24 12:20:23.117] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_ADMIN-PANEL/192.168.11.162:admin-panel:0 - registration status: 204
+[2023-06-24 12:20:23.127] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:20:23.129] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 12:20:23.132] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 12:20:23.133] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
 [2023-06-24 11:31:02.946] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
                 HV000001: Hibernate Validator 8.0.0.Final
 [2023-06-24 11:31:03.029] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
@@ -3301,3 +3651,1458 @@ jakarta.persistence.NonUniqueResultException: query did not return a unique resu
                 HikariPool-1 - Shutdown completed.
 [2023-06-24 11:57:40.329] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
                 Shutting down DiscoveryClient ...
+[2023-06-24 12:22:10.269] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:22:10.324] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 41488 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:22:10.326] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:22:11.657] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:22:11.866] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 195 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:22:12.692] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=0255feb1-6af1-3fef-9ace-34193aa59e97
+[2023-06-24 12:22:12.863] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:22:14.113] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:22:14.144] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:22:14.147] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:22:14.149] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:22:14.386] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:22:14.387] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 3967 ms
+[2023-06-24 12:22:14.760] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:22:14.811] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:22:14.814] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:22:15.021] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:22:15.204] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:22:15.227] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:22:15.491] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30704f85
+[2023-06-24 12:22:15.494] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 12:22:15.582] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@35becbd4
+[2023-06-24 12:22:15.961] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:22:16.954] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 12:22:17.321] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:22:17.625] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 12:22:17.796] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'admin-service' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 12:22:18.477] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-24 12:22:20.974] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 12:22:21.101] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 12:22:21.264] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:22:21.294] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 46703 (http) with context path ''
+[2023-06-24 12:22:21.300] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 46703
+[2023-06-24 12:22:21.309] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 12:22:21.378] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 12:22:21.385] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:22:21.428] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 12:22:21.429] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 12:22:22.204] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 12:22:22.207] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 12:22:22.211] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 12:22:22.219] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687596742217 with initial instances count: 1
+[2023-06-24 12:22:22.230] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-24 12:22:22.231] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687596742231, current=UP, previous=STARTING]
+[2023-06-24 12:22:22.233] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:22:22.264] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 13.058 seconds (process running for 15.554)
+[2023-06-24 12:22:22.301] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:24:23.444] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-24 12:24:23.445] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-24 12:24:23.447] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 1 ms
+[2023-06-24 12:24:28.957] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-4] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-service
+[2023-06-24 12:24:28.962] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-4] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-service
+[2023-06-24 12:24:28.971] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:24:37.674] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-6] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-service
+[2023-06-24 12:24:37.674] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-6] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-service
+[2023-06-24 12:24:37.675] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:24:59.820] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-8] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-service
+[2023-06-24 12:24:59.820] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-8] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-service
+[2023-06-24 12:25:18.770] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-8] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-service
+[2023-06-24 12:25:18.771] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-8] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-service
+[2023-06-24 12:25:18.772] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-8] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-service/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:25:18.834] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-24 12:25:18.835] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687596918835, current=DOWN, previous=UP]
+[2023-06-24 12:25:18.838] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:25:18.846] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.apache.coyote.http11.Http11NioProtocol :
+                Pausing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:25:18.847] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.apache.catalina.core.StandardService :
+                Stopping service [Tomcat]
+[2023-06-24 12:25:18.849] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:25:18.851] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-06-24 12:25:18.860] WARN  matin-Lenovo-G50-70 [ionShutdownHook] org.apache.catalina.loader.WebappClassLoaderBase :
+                The web application [ROOT] appears to have started a thread named [boundedElastic-evictor-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:25:18.928] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:25:18.939] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 12:25:18.963] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 12:25:18.964] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-24 12:25:29.965] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:25:30.020] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 41815 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:25:30.022] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:25:31.054] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:25:31.188] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 126 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:25:31.477] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f3ef4498-a7e4-3fea-ad85-c2e60cfe05d4
+[2023-06-24 12:25:31.562] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:25:32.077] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:25:32.085] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:25:32.086] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:25:32.087] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:25:32.197] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:25:32.197] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2114 ms
+[2023-06-24 12:25:32.370] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:25:32.428] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:25:32.431] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:25:32.553] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:25:32.644] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:25:32.657] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:25:32.812] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c7843c3
+[2023-06-24 12:25:32.814] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 12:25:32.862] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@2ce47652
+[2023-06-24 12:25:33.132] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:25:33.864] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 12:25:34.205] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:25:34.410] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 12:25:34.535] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'admin-panel' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 12:25:35.137] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-24 12:25:36.812] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 12:25:36.881] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 12:25:36.958] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:25:36.977] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 45611 (http) with context path ''
+[2023-06-24 12:25:36.978] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 45611
+[2023-06-24 12:25:36.984] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 12:25:37.020] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 12:25:37.025] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 12:25:37.048] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 12:25:37.455] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 12:25:37.458] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 12:25:37.461] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 12:25:37.467] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687596937465 with initial instances count: 2
+[2023-06-24 12:25:37.475] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-24 12:25:37.475] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687596937475, current=UP, previous=STARTING]
+[2023-06-24 12:25:37.477] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:25:37.500] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 7.99 seconds (process running for 10.188)
+[2023-06-24 12:25:37.529] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:25:53.150] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-24 12:25:53.150] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-24 12:25:53.152] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 1 ms
+[2023-06-24 12:25:59.872] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-4] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-panel
+[2023-06-24 12:25:59.877] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-4] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-panel
+[2023-06-24 12:25:59.886] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:26:07.616] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-6] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-panel
+[2023-06-24 12:26:07.618] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-6] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-panel
+[2023-06-24 12:26:07.619] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:26:21.463] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-9] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-panel
+[2023-06-24 12:26:21.464] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-9] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-panel
+[2023-06-24 12:27:13.002] WARN  matin-Lenovo-G50-70 [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s87ms655µs513ns).
+[2023-06-24 12:27:13.010] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-9] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer :
+                No servers available for service: admin-panel
+[2023-06-24 12:27:13.011] WARN  matin-Lenovo-G50-70 [o-auto-1-exec-9] org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient :
+                Load balancer does not contain an instance for the service admin-panel
+[2023-06-24 12:27:13.012] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-9] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]] with root cause
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://admin-panel/api/adminControlSwitch] [AdminService#getAdminControlSwitch()]: [Load balancer does not contain an instance for the service admin-panel]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:96)
+	at jdk.proxy2/jdk.proxy2.$Proxy146.getAdminControlSwitch(Unknown Source)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.checkControlFlow(PurchasedAccessAspect.java:27)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:41)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:27:13.048] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-24 12:27:13.049] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687597033049, current=DOWN, previous=UP]
+[2023-06-24 12:27:13.049] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:27:13.057] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:27:13.085] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:27:13.089] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 12:27:13.096] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 12:27:13.097] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-24 12:28:39.721] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:28:39.813] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 42186 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:28:39.819] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:28:40.974] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:28:41.112] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 128 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:28:41.425] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f3ef4498-a7e4-3fea-ad85-c2e60cfe05d4
+[2023-06-24 12:28:41.526] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:28:42.021] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:28:42.031] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:28:42.032] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:28:42.033] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:28:42.153] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:28:42.153] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2258 ms
+[2023-06-24 12:28:42.342] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:28:42.385] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:28:42.388] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:28:42.549] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:28:42.692] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:28:42.707] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:28:42.897] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f60824e
+[2023-06-24 12:28:42.899] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 12:28:42.947] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@58bad46f
+[2023-06-24 12:28:43.193] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:28:43.977] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 12:28:44.369] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:28:44.692] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 12:28:45.029] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'admin-panel' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 12:28:46.828] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-24 12:28:50.994] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 12:28:51.239] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 12:28:51.436] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:28:51.495] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 42301 (http) with context path ''
+[2023-06-24 12:28:51.500] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 42301
+[2023-06-24 12:28:51.511] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 12:28:51.610] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 12:28:51.621] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:28:51.670] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 12:28:51.671] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 12:28:51.671] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 12:28:51.671] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 12:28:51.671] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 12:28:51.672] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 12:28:51.672] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 12:28:52.468] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 12:28:52.474] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 12:28:52.480] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 12:28:52.490] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687597132489 with initial instances count: 2
+[2023-06-24 12:28:52.512] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-24 12:28:52.513] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687597132513, current=UP, previous=STARTING]
+[2023-06-24 12:28:52.517] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:28:52.550] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 13.393 seconds (process running for 15.515)
+[2023-06-24 12:28:52.609] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:29:17.331] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-24 12:29:17.332] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-24 12:29:17.334] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 2 ms
+[2023-06-24 12:29:58.534] WARN  matin-Lenovo-G50-70 [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s533ms665µs381ns).
+[2023-06-24 12:29:58.556] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:30:02.337] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:31:17.141] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:31:19.128] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:32:28.828] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-7] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForComment(PurchasedAccessAspect.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.CommentController$$SpringCGLIB$$0.addCommentToProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:33:33.002] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-24 12:33:33.002] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687597413002, current=DOWN, previous=UP]
+[2023-06-24 12:33:33.004] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:33:33.011] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:33:33.026] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:33:33.028] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 12:33:33.031] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 12:33:33.032] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
+[2023-06-24 12:33:41.170] INFO  matin-Lenovo-G50-70 [kground-preinit] org.hibernate.validator.internal.util.Version :
+                HV000001: Hibernate Validator 8.0.0.Final
+[2023-06-24 12:33:41.221] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Starting ProductServiceApplication using Java 17.0.6 with PID 42917 (/home/matin/IdeaProjects/product-service/target/classes started by matin in /home/matin/IdeaProjects/product-service)
+[2023-06-24 12:33:41.222] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                No active profile set, falling back to 1 default profile: "default"
+[2023-06-24 12:33:42.274] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-24 12:33:42.385] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :
+                Finished Spring Data repository scanning in 103 ms. Found 5 JPA repository interfaces.
+[2023-06-24 12:33:42.653] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.context.scope.GenericScope :
+                BeanFactory id=f3ef4498-a7e4-3fea-ad85-c2e60cfe05d4
+[2023-06-24 12:33:42.747] INFO  matin-Lenovo-G50-70 [           main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :
+                Bean 'com.matin.productservice.feign.AdminService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-06-24 12:33:43.180] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat initialized with port(s): 0 (http)
+[2023-06-24 12:33:43.190] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Initializing ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:33:43.191] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardService :
+                Starting service [Tomcat]
+[2023-06-24 12:33:43.191] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.StandardEngine :
+                Starting Servlet engine: [Apache Tomcat/10.1.8]
+[2023-06-24 12:33:43.313] INFO  matin-Lenovo-G50-70 [           main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring embedded WebApplicationContext
+[2023-06-24 12:33:43.314] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :
+                Root WebApplicationContext: initialization completed in 2029 ms
+[2023-06-24 12:33:43.477] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.jpa.internal.util.LogHelper :
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-24 12:33:43.519] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.Version :
+                HHH000412: Hibernate ORM core version 6.2.2.Final
+[2023-06-24 12:33:43.521] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.cfg.Environment :
+                HHH000406: Using bytecode reflection optimizer
+[2023-06-24 12:33:43.671] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:33:43.763] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+[2023-06-24 12:33:43.777] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Starting...
+[2023-06-24 12:33:43.935] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.pool.HikariPool :
+                HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@655909e2
+[2023-06-24 12:33:43.938] INFO  matin-Lenovo-G50-70 [           main] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Start completed.
+[2023-06-24 12:33:43.985] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.orm.dialect :
+                HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@3add5e17
+[2023-06-24 12:33:44.209] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.bytecode.internal.BytecodeProviderInitiator :
+                HHH000021: Bytecode provider name : bytebuddy
+[2023-06-24 12:33:44.923] INFO  matin-Lenovo-G50-70 [           main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-24 12:33:45.294] INFO  matin-Lenovo-G50-70 [           main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 12:33:45.479] WARN  matin-Lenovo-G50-70 [           main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-24 12:33:45.600] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.openfeign.FeignClientFactoryBean :
+                For 'admin-panel' URL not provided. Will try picking an instance via load-balancing.
+[2023-06-24 12:33:46.192] INFO  matin-Lenovo-G50-70 [           main] org.springframework.data.jpa.repository.query.QueryEnhancerFactory :
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+[2023-06-24 12:33:47.824] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration :
+                Eureka HTTP Client uses RestTemplate.
+[2023-06-24 12:33:47.894] WARN  matin-Lenovo-G50-70 [           main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :
+                Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2023-06-24 12:33:47.971] INFO  matin-Lenovo-G50-70 [           main] org.apache.coyote.http11.Http11NioProtocol :
+                Starting ProtocolHandler ["http-nio-auto-1"]
+[2023-06-24 12:33:47.988] INFO  matin-Lenovo-G50-70 [           main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :
+                Tomcat started on port(s): 40689 (http) with context path ''
+[2023-06-24 12:33:47.990] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration :
+                Updating port to 40689
+[2023-06-24 12:33:47.996] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory :
+                Setting initial instance status as: STARTING
+[2023-06-24 12:33:48.039] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Initializing Eureka in region us-east-1
+[2023-06-24 12:33:48.046] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 12:33:48.080] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Disable delta property : false
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Single vip registry refresh property : null
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Force full registry fetch : false
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application is null : false
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Registered Applications size is zero : true
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Application version is -1: true
+[2023-06-24 12:33:48.081] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Getting all instance registry info from the eureka server
+[2023-06-24 12:33:48.515] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                The response status is 200
+[2023-06-24 12:33:48.519] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Starting heartbeat executor: renew interval is: 30
+[2023-06-24 12:33:48.523] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.InstanceInfoReplicator :
+                InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2023-06-24 12:33:48.529] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Discovery Client initialized at timestamp 1687597428528 with initial instances count: 2
+[2023-06-24 12:33:48.536] INFO  matin-Lenovo-G50-70 [           main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Registering application PRODUCT-SERVICE with eureka with status UP
+[2023-06-24 12:33:48.536] INFO  matin-Lenovo-G50-70 [           main] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687597428536, current=UP, previous=STARTING]
+[2023-06-24 12:33:48.538] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 12:33:48.561] INFO  matin-Lenovo-G50-70 [           main] com.matin.productservice.ProductServiceApplication :
+                Started ProductServiceApplication in 7.844 seconds (process running for 9.694)
+[2023-06-24 12:33:48.588] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 12:33:58.738] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-24 12:33:58.738] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Initializing Servlet 'dispatcherServlet'
+[2023-06-24 12:33:58.741] INFO  matin-Lenovo-G50-70 [o-auto-1-exec-1] org.springframework.web.servlet.DispatcherServlet :
+                Completed initialization in 3 ms
+[2023-06-24 12:34:07.792] ERROR matin-Lenovo-G50-70 [o-auto-1-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] :
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.reflect.UndeclaredThrowableException] with root cause
+java.nio.file.AccessDeniedException: Access denied. Product purchase required.
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccess(PurchasedAccessAspect.java:47)
+	at com.matin.productservice.annotation.purchase.aspect.PurchasedAccessAspect.validatePurchasedAccessForVote(PurchasedAccessAspect.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:44)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.matin.productservice.controller.VoteController$$SpringCGLIB$$0.voteOnProduct(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 12:38:48.085] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration

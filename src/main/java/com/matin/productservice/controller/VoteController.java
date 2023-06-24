@@ -1,5 +1,6 @@
 package com.matin.productservice.controller;
 
+import com.matin.productservice.annotation.purchase.PurchasedAccess;
 import com.matin.productservice.dto.comment.ChangeCommentStatusDto;
 import com.matin.productservice.dto.vote.ChangeVoteStatusDto;
 import com.matin.productservice.dto.vote.ProductVoteDto;
@@ -23,6 +24,7 @@ public class VoteController {
     @PostMapping("/products/{productId}")
     @Operation(summary = "Add vote to a product"
             , description = "Checks if a product has the add vote activated and if so adds the vote")
+    @PurchasedAccess
     public Boolean voteOnProduct(@PathVariable Long productId, @Valid @RequestBody VoteDto voteDto) {
         return voteService.voteOnProduct(productId, voteDto);
     }
