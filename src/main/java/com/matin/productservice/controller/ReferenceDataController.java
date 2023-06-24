@@ -38,7 +38,7 @@ public class ReferenceDataController {
         return providerService.getAllProviders();
     }
 
-    @GetMapping("/providers/{id}")
+    @GetMapping("/providers/id/{id}")
     @Operation(summary = "Returns a provider by id"
             , description = "Returns a provider by id")
     public ReferenceTransferDataDto getProviderById(@PathVariable Long id) {
@@ -68,7 +68,7 @@ public class ReferenceDataController {
         return typeService.getAllTypes();
     }
 
-    @GetMapping("/types/{id}")
+    @GetMapping("/types/id/{id}")
     @Operation(summary = "Returns a type by Id"
             , description = "Returns a type by Id")
     public ReferenceTransferDataDto getTypeById(@PathVariable Long id) {
