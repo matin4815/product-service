@@ -6048,3 +6048,33 @@ java.lang.Exception: could not execute statement [ERROR: duplicate key value vio
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-06-24 17:35:55.077] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:40:55.077] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:45:55.078] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:50:55.079] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 17:55:55.080] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:00:55.081] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:05:55.082] INFO  matin-Lenovo-G50-70 [trap-executor-0] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver :
+                Resolving eureka endpoints via configuration
+[2023-06-24 18:10:13.691] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry :
+                Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+[2023-06-24 18:10:13.692] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Saw local status change event StatusChangeEvent [timestamp=1687617613692, current=DOWN, previous=UP]
+[2023-06-24 18:10:13.692] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0: registering service...
+[2023-06-24 18:10:13.704] INFO  matin-Lenovo-G50-70 [nfoReplicator-0] com.netflix.discovery.DiscoveryClient :
+                DiscoveryClient_PRODUCT-SERVICE/192.168.11.162:product-service:0 - registration status: 204
+[2023-06-24 18:10:13.715] INFO  matin-Lenovo-G50-70 [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-24 18:10:13.718] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown initiated...
+[2023-06-24 18:10:13.720] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.zaxxer.hikari.HikariDataSource :
+                HikariPool-1 - Shutdown completed.
+[2023-06-24 18:10:13.721] INFO  matin-Lenovo-G50-70 [ionShutdownHook] com.netflix.discovery.DiscoveryClient :
+                Shutting down DiscoveryClient ...
