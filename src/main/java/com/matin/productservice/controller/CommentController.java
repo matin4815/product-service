@@ -32,7 +32,6 @@ public class CommentController {
     @GetMapping("/products/{productId}")
     @Operation(summary = "Returns a products comments"
             , description = "Returns a products Accepted comments")
-    @PurchasedAccess
     public List<CommentDto> getProductComments(@PathVariable Long productId, @RequestParam(defaultValue = "0") Integer page) {
         return commentService.getProductComments(productId, page);
     }
